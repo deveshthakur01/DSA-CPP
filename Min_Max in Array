@@ -2,7 +2,19 @@
 #include <iostream>
 #include <vector>
 #include <limits.h>
-//find Max and Min of array
+//find Max and Min of array 
+/* INT_MAX is a macro that specifies that an integer variable cannot store any value beyond this limit. 
+INT_MIN specifies that an integer variable cannot store any value below this limit.
+
+Values of INT_MAX and INT_MIN may vary
+from compiler to compiler. Following are
+typical values in a compiler where integers
+are stored using 32 bits.
+
+Value of INT_MAX is +2147483647.
+Value of INT_MIN is -2147483648.*/
+
+
 using namespace std;
 int getMini(int num[] ,int size){
 	
