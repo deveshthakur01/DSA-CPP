@@ -1,0 +1,63 @@
+#include <algorithm>
+#include <iostream>
+#include <vector>
+#include <limits.h>
+//find Max and Min of array
+using namespace std;
+int getMini(int num[] ,int size){
+	
+	int mini= INT_MAX;
+
+	for(int i=0 ; i<size; i++)
+	{
+		if(num[i]< mini)
+		{
+			mini=num[i];
+		}
+	}
+	return mini;
+
+}
+
+int getMaxi(int num[],int size){
+	int maxi= INT_MIN;
+
+	for(int i=0 ; i<size; i++){
+		if(num[i]>maxi)
+		{
+			maxi=num[i];
+		}
+	}
+	return maxi;
+
+}
+
+
+int main() {
+	// Your code goes here;
+	int size;
+	cin>> size;
+
+	int arr[100];
+for (int i =0;i<size;i++){
+	cin>>arr[i];
+}
+	getMini(arr,size);
+	getMaxi(arr,size);
+
+	cout<<"Mini "<<getMini(arr,size)<<endl<<endl;
+cout<<"Maxi "<<getMaxi(arr,size)<<endl;
+
+	return 0;
+}
+
+
+/*Custom Input
+4
+5 8 2 7
+
+Output
+[Success] Your code was executed successfully
+Mini 2
+
+Maxi 8*/
